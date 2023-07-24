@@ -1,0 +1,68 @@
+.main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    text-align: center;
+}
+
+.btns{
+    margin-bottom: 40px;
+    width: 340px;
+    height: 57px;
+    border-radius: 10px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 2em;
+}
+
+.btn{
+    width: 169px;
+    color: #707275;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    height: 57px;
+    border-radius: 10px;
+}
+
+.btn-active{
+    background-color: #FC762A !important;
+    border-radius: 10px;
+    color: #fff;
+}
+.tex{
+    border-top: none;
+    width: 530px;
+    border-left: none;
+    border-right: none;
+}
+.tex:focus{
+ outline: none;
+}
+
+.c_margin{
+    margin-top: 35px;
+}
+
+
+.login-btn{
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+.logo{
+    text-align: center;
+    margin-bottom: 38px;
+   
+}
+
+.logo img{
+    width: 25%;
+}

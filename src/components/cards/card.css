@@ -1,0 +1,43 @@
+.cardss{
+    width: 200px;
+    height: 53px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 1px solid #CACACA;
+    transition: all 0.4s ease;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cardss:hover {
+     height: 90px;
+     transition: all 0.4s ease;
+     width: 278px;
+     padding-top: 12px;
+     padding-left: 21px;
+     text-align: left;
+   
+}
+.card-h-child{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.card-headers{
+    margin-top: auto;
+    
+    margin-bottom: auto;
+}
+
+.flex{
+    flex: 1;
+}
+.card-flex{
+    margin-top: 9px;
+}
+
+
+.card-value{
+    color: #707275;
+}

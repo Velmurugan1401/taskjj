@@ -1,13 +1,160 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy/Gilroy-Bold.ttf");
+  font-weight: 800;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: "Gilroy" !important;
+}
+
+button {
+  font-family: "Gilroy";
+}
+
+.d-flex {
+  display: flex;
+}
+
+.PrimaryFont {
+  font-size: 18px;
+  line-height: 22.05px;
+  color: #707275;
+}
+
+.SecountaryFont {
+
+  font-size: 16px;
+  line-height: 22.05px;
+}
+
+.c-margin-top-bottom {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* table  styles*/
+
+th {
+  padding: 10px;
+  text-align: left;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 35px;
+  color: #707275;
+}
+
+thead {
+  border-radius: 10px;
+}
+
+.tr {
+  border: 2px solid #CACACA;
+  border-left: none;
+  border-right: none;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: left;
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cbtn {
+  width: 340.97px;
+  height: 57.43px;
+  background-color: #1D9C60;
+  border: none;
+  color: #fff;
+}
+
+.cbtn-table {
+  width: 140px;
+  height: 36px;
+  background-color: #1D9C60;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+
+}
+
+.tfooter {
+  padding: 20px;
+  background-color: #EEEEEE;
+}
+
+.table-page-btn {
+  width: 32px;
+  height: 24px;
+  background-color: #FFFFFF;
+  border: 2px solid #707275;
+}
+
+.table {
+  border: 1px solid #CACACA;
+  border-radius: 10px;
+  /* margin: 10px; */
+}
+
+.pagesize {
+  color: #707275;
+}
+
+
+/* header  styles*/
+
+.c-header {
+  padding-left: 20px;
+  padding-right: 40px;
+  height: 105px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 0px, rgba(6, 24, 44, 0.65) 0px 4px 6px -3px, rgba(255, 255, 255, 0.08) 0px 0px 0px inset;
+}
+
+.company-name {
+  font-size: 24px;
+}
+
+.company-address {
+  font-size: 14px;
+}
+
+.n-btn {
+  border: none;
+  background-color: transparent;
+}
+
+
+.main-contact{
+  width: 100%;
+}
+
+.main-body{
+  padding-left: 27px;
+  padding-right: 27px;
+  margin-top: 57px;
 }

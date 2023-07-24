@@ -1,0 +1,17 @@
+.notification,.sound{
+    width: 26px;
+    padding-right: 31px;
+}
+
+.name-tag{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+    border: 1px solid #FF7300;
+    background-color: #FF7300;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
