@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./card.css"
 import Coin from "../../assets/images/icons/coin.png"
 
-function Card({ item, index }) {
+function Card({ item, index }:{ item:any, index:number }) {
     
     const [cureenthover, sethover] = useState(-1)
     return (
@@ -13,14 +13,14 @@ function Card({ item, index }) {
         }} >
             <div className={(index == cureenthover ? "card-child" : "card-h-child card-child")}> <span style={index == cureenthover ? { color: "#1D9C60" } : {color: "#707275" }} className="card-headers">{item.Name}</span>
                 {
-                    cureenthover == index ? (item.Child?.map((childitem, index) => {
+                    cureenthover == index ? (item.Child?.map((childitem:any, index:number) => {
                         return (
 
                             item.Name == "Gold Rate History" ? (
                                 <div className="d-flex card-flex">
 
                                     <div className="" style={{marginRight:10}}>
-                                        <img style={{width:39}} src={Coin}></img>
+                                        <img alt="side_image"  style={{width:39}} src={Coin}></img>
                                     </div>
                                     <div className=" SecountaryFont ">
                                         {childitem.Name} 

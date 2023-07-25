@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 
-function Login(params) {
+function Login() {
 
     const [currentactive, setactive] = useState(0)
     var Navigate = useNavigate()
@@ -13,12 +13,12 @@ function Login(params) {
         <div className='main'>
             <div className='card'>
                 <div className='logo' >
-                    <img src={logo} ></img>
+                    <img alt="side_image"  src={logo} ></img>
                 </div>
                 <div className='header'>
                     <div className='btns'>
-                        <button className={`btn active SecountaryFont ${currentactive == 0 ? "btn-active" : ""}`}>Email</button>
-                        <button className={`btn active SecountaryFont ${currentactive == 1 ? "btn-active" : ""}`}>Phone</button>
+                        <button className={`btn active SecountaryFont ${currentactive === 0 ? "btn-active" : ""}`}>Email</button>
+                        <button className={`btn active SecountaryFont ${currentactive === 1 ? "btn-active" : ""}`}>Phone</button>
                     </div>
                 </div>
                 <div className='body'>

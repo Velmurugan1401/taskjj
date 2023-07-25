@@ -2,7 +2,7 @@ import Notification from "../../assets/images/icons/notificationbing.png"
 import Sound from "../../assets/images/icons/Group.png"
 import "./header.css"
 
-function HeaderBar(params) {
+function HeaderBar() {
     
     return (
         <div className="c-header">
@@ -13,10 +13,10 @@ function HeaderBar(params) {
                 </div>
                 <div className="c-margin-top-bottom d-flex">
                     <div className="c-margin-top-bottom">
-                        <img className="notification" src={Notification}></img>
+                        <img alt="side_image"  className="notification" src={Notification}></img>
                     </div>
                     <div className="c-margin-top-bottom">
-                        <img className="sound" src={Sound}></img>
+                        <img alt="side_image"  className="sound" src={Sound}></img>
                     </div>
                     <div className="c-margin-top-bottom">
                         <span className="name-tag">L</span>

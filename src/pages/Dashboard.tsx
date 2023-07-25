@@ -55,13 +55,13 @@ const Menu = [
 ]
 
 function Dashboard() {
+
     var row = [
         {
             "name": "Rajesh",
             "planid": "2F34",
             "month": "3",
             "goldrate": "12,34",
-
             "amount": "12,34,000",
             "accumgold": "12,340",
             "action": <button className="cbtn-table">Raise Invoice</button>
@@ -72,7 +72,6 @@ function Dashboard() {
             "planid": "2F34",
             "month": "3",
             "goldrate": "12,34",
-
             "amount": "12,34,000",
             "accumgold": "12,340",
             "action": <button className="cbtn-table">Raise Invoice</button>
@@ -151,7 +150,7 @@ function Dashboard() {
             </div>
             <div className="dash-cards d-flex">
                 {
-                    Menu.map((item, index) => {
+                    Menu.map((item:object, index:number) => {
                         return <Card item={item} index={index} />
                     })
                 }

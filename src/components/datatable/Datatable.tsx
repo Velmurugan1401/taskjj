@@ -1,6 +1,6 @@
 
 
-function Datatable({ row, colum }) {
+function Datatable({ row, colum }:{ row:any, colum:any }) {
 
     return (
         <div className="table">
@@ -8,7 +8,7 @@ function Datatable({ row, colum }) {
                 <thead>
                     <tr>
                         {
-                            colum.map((item, index) => (
+                            colum.map((item:any, index:any) => (
                                 <th key={index}>{item['HeaderName']}</th>
                             ))
                         }
@@ -16,10 +16,10 @@ function Datatable({ row, colum }) {
                 </thead>
                 <tbody>
                     {
-                        row.length > 0 ? (row.map((rdata, indexs) => {
+                        row.length > 0 ? (row.map((rdata:any, indexs:number) => {
                             return <tr className="tr">
                                 {
-                                    colum.map((rcolum, ins) => {
+                                    colum.map((rcolum:any, ins:number) => {
                                         return <td>{rdata[rcolum['field']] ? rdata[rcolum['field']] : "-"}</td>
                                     })
                                 }

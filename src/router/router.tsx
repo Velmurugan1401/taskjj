@@ -2,8 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Login from '../pages/auth/Login';
 import Layout from '../layout/layout';
 
-
-function MainRouter(params) {
+function MainRouter() {
     return (
         <Routes>
             <Route path="/" element={<Login />} />

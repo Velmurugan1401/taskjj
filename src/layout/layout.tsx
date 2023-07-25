@@ -2,7 +2,7 @@ import SideNav from "../components/navbar/Sidenav"
 import HeaderBar from "../components/navbar/Header"
 import Dashboard from "../pages/Dashboard"
 
-function Layout(params) {
+function Layout(params:any) {
     return (
         <div className="d-flex">
             <div>

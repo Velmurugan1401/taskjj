@@ -8,15 +8,15 @@ import redemption from "../../assets/images/icons/moneyrecive.png"
 import profile from "../../assets/images/icons/Vector.png"
 import logo from "../../assets/images/icons/logo.png"
 
-var icons = {
+var icons :any = {
     home, report, plans, redemption, profile
 }
 
-function SideNav(params) {
+function SideNav() {
     return (
         <div className="sidebar">
             <div className="sid-header" >
-                <img style={{ width: "44%" }} src={logo}></img>
+                <img alt="side_image"  style={{ width: "44%" }} src={logo}></img>
             </div>
             <div className="sid-body"  >
                 {
@@ -29,14 +29,14 @@ function SideNav(params) {
     )
 }
 
-const SingleMenu = (item, index) => {
+const SingleMenu = (item:any, index:number) => {
     return (
         <div key={index} className={`single-menu d-flex `} >
-            <span className={`${index == 0 ? "single-menu-active" : ""}`}></span>
+            <span className={`${index === 0 ? "single-menu-active" : ""}`}></span>
             <div className="side-icon">
-                <img className="side-icons-menu" src={icons[item['icon']]}></img>
+                <img alt="side_image" className="side-icons-menu" src={icons[item['icon']]}></img>
             </div>
-            <div className={`side-name SecountaryFont ${index == 0 ? "side-name-active" : ""}`} >
+            <div className={`side-name SecountaryFont ${index === 0 ? "side-name-active" : ""}`} >
                 {item['Name']}
             </div>
         </div>
